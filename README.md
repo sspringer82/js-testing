@@ -9,6 +9,8 @@
 - https://jestjs.io/
 - https://www.communardo.de/wp-content/blogs.dir/2/files/2012/02/jsTD-Overview.png - Architektur
 - https://www.borisgloger.com/wp-content/uploads/blog/Testp-300x281-300x281.jpeg Testpyramide
+- https://jestjs.io/docs/en/snapshot-testing
+- cypress.io
 
 ## Installation
 

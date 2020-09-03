@@ -19,5 +19,9 @@ describe('Calculator', () => {
       // Assert
       expect(result).toBe(2);
     });
+
+    it('should match snapshot', () => {
+      expect(calc.render(4)).toMatchSnapshot();
+    });
   });
 });

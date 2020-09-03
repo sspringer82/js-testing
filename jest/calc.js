@@ -5,6 +5,10 @@ class Calculator {
     }
     return a + b;
   }
+
+  render(value) {
+    return `<div>${value}</div>`;
+  }
 }
 
 module.exports = Calculator;
