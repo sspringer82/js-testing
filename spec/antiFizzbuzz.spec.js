@@ -1,5 +1,3 @@
-/*global describe, it, expect, fizzbuzz*/
-
 describe('FizzBuzz', () => {
   const map = [
     '',
@@ -36,7 +34,7 @@ describe('FizzBuzz', () => {
   ];
 
   let fb;
-  beforeEach(function () {
+  beforeEach(() => {
     fb = new FizzBuzz();
   });
 
