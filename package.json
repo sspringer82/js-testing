@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "karma start --reporters nyan",
+    "test:nyan": "karma start --reporters nyan",
+    "test": "karma start",
     "cypress": "export FOO='bar' cypress run"
   },
   "repository": {
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/sspringer82/js-testing#readme",
   "devDependencies": {
+    "husky": "^4.2.5",
     "jasmine-core": "^3.6.0",
     "karma": "^5.2.1",
     "karma-chrome-launcher": "^3.1.0",
@@ -29,5 +31,11 @@
   "dependencies": {
     "cypress": "^5.1.0",
     "karma-nyan-reporter": "^0.2.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test"
+    }
   }
 }
