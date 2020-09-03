@@ -32,5 +32,22 @@ describe('Calculator', () => {
       expect(!false).toBeTrue();
       expect(false).not.toBeTrue();
     });
+
+    it('should throw an exception if a string is provided', () => {
+      try {
+        const result = calc.add('a', 'b');
+      } catch (e) {
+        expect(e).toEqual(jasmine.any(Error));
+      }
+    });
+    it('should throw an exception if a string is provided', () => {
+      function addTest() {
+        calc.add('a', 'b');
+      }
+      expect(addTest).toThrow();
+
+      expect(() => calc.add('a', 'b')).toThrow();
+      expect(() => calc.add('a', 'b')).toThrowError('Not a 🤬 Number!');
+    });
   });
 });
