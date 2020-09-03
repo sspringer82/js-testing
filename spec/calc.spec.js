@@ -26,5 +26,11 @@ describe('Calculator', () => {
       // Assert
       expect(result).toBe(4);
     });
+
+    // negierung mit .not vor einem matcher
+    it('should work', () => {
+      expect(!false).toBeTrue();
+      expect(false).not.toBeTrue();
+    });
   });
 });
