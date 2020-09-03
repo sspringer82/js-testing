@@ -38,12 +38,14 @@ describe('FizzBuzz', () => {
     fb = new FizzBuzz();
   });
 
+  const fizzbuzzTest = function (x, y) {
+    expect(fb.run(x)).toEqual(y);
+  };
+
   for (let i = 1; i < map.length; i++) {
     it(
       `should return ${map[i]} if ${i} is provided`,
-      function (x, y) {
-        expect(fb.run(x)).toEqual(y);
-      }.bind(null, i, map[i]),
+      fizzbuzzTest.bind(null, i, map[i]),
     );
   }
 });
