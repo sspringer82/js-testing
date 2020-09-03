@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --watch",
+    "test:coverage": "jest --collect-coverage",
     "backend": "json-server -p 8765 -w data.json"
   },
   "keywords": [],
