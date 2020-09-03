@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstname": "Klaus",
+      "lastname": "Müller"
+    },
+    {
+      "id": 2,
+      "firstname": "Maria",
+      "lastname": "Meier"
+    },
+    {
+      "firstname": "Lotta",
+      "lastname": "Schmidt",
+      "id": 3
+    },
+    {
+      "firstname": "Lotta",
+      "lastname": "Schmidt",
+      "id": 4
+    },
+    {
+      "firstname": "Lotta",
+      "lastname": "Schmidt",
+      "id": 5
+    },
+    {
+      "firstname": "Lotta",
+      "lastname": "Schmidt",
+      "id": 6
+    },
+    {
+      "firstname": "Lotta",
+      "lastname": "Schmidt",
+      "id": 7
+    }
+  ]
+}

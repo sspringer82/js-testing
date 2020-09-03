@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watch",
+    "backend": "json-server -p 8765 -w data.json"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "axios-mock-adapter": "^1.18.2",
     "jest": "^26.4.2"
+  },
+  "dependencies": {
+    "axios": "^0.20.0"
   }
 }
